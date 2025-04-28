@@ -1,4 +1,4 @@
-# Getting started - app frontend and backend creation
+  # Getting started - app frontend and backend creation
 
 ## Explain to GitHub Copilot the goals and steps
 
@@ -23,7 +23,7 @@ generate instructions in this order
 6. Setup the monafit-tracker/frontend directory will store the react app with no subdirectories
 7. Install react framework
 8. Install bootstrap and import it
-9. Commands to install mongodb via 'apt-get' 
+9. Commands to install mongodb via 'apt-get'
 10. Commands start mongodb with the 'sudo service mongodb start' and 'sudo service mongodb status'
 
 The directory tree for the monafit Tracker App
@@ -116,7 +116,7 @@ Type the following prompt in GitHub Copilot Chat:
 In our next steps lets think step by step and setup the following in this order
 
 1. Initialize the mongo monafit_db database and create a correct table structure for users, teams, activities, leaderboard, and workouts collections
-2. Make sure there is a unique id for primary key for the user collection 
+2. Make sure there is a unique id for primary key for the user collection
    ex. db.users.createIndex({ "email": 1 }, { unique: true })
 3. settings.py in our django project for mongodb monafit_db database including localhost and the port
 4. settings.py in our django project setup for all installed apps. ex djongo, monafit_tracker, rest_framework
@@ -576,12 +576,12 @@ becomes
 
 HTTP 200 OK Allow: GET, HEAD, OPTIONS Content-Type: application/json Vary: Accept
 
-{ 
+{
     "users": "http://<codespace-name>-8000.app.github.dev/api/users/?format=api",
     "teams": "http://<codespace-name>-8000.app.github.dev/api/teams/?format=api",
     "activities": "http://<codespace-name>-8000.app.github.dev/api/activities/?format=api",
     "leaderboard": "http://<codespace-name>-8000.app.github.dev/api/leaderboard/?format=api",
-    "workouts": "http://<codespace-name>-8000.app.github.dev/api/workouts/?format=api" 
+    "workouts": "http://<codespace-name>-8000.app.github.dev/api/workouts/?format=api"
 }
 ```
 
